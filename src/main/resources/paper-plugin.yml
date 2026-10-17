@@ -1,0 +1,25 @@
+name: Pl3xMap-Magic
+version: '${version}'
+main: dev.tanner.pl3xmap.magic.MagicMapPlugin
+bootstrapper: dev.tanner.pl3xmap.magic.MagicMapBootstrap
+description: Pl3xMap addon for Magic
+api-version: '26.2'
+authors:
+  - Tanner Kuck
+website: https://github.com/tann3r4k/Pl3xMap-Magic
+
+dependencies:
+  server:
+    Pl3xMap:
+      load: BEFORE
+      required: true
+      join-classpath: true
+    Magic:
+      load: BEFORE
+      required: true
+      join-classpath: true
+
+permissions:
+  pl3xmapmagic.reload:
+    description: Reload the Magic map addon
+    default: op

@@ -1,0 +1,15 @@
+spells:
+  enabled: true
+  players-only: false
+  hide-vanished: true
+  # Seconds a cast stays on the map. 0 keeps the latest cast from each mage.
+  lifetime-seconds: 12
+  # Circle radius, in blocks.
+  radius: 8
+  label: Spells
+wands:
+  enabled: true
+  label: Lost Wands
+warps:
+  enabled: true
+  label: Warps
